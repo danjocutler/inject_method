@@ -1,4 +1,4 @@
-require 'my_inject'
+
 
 describe Array do 
 
@@ -23,8 +23,11 @@ describe Array do
 	end
 
 	context "strings" do
+
+		
 		it "should find the longest word" do
-			expect(%w(cup book monitor).accumulator  {|x, y| x.length > y.length ? x : y}).to eq 'monitor'
+			test_array = %w(cup book monitor)
+			expect(test_array.accumulator  {|x, y| x.length > y.length ? x : y}).to eq 'monitor'
 		end
 
 		it "should find the shortest word" do
