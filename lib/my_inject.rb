@@ -25,10 +25,3 @@ end
 # p array.accumulator(&:*)
 # p array.accumulator(10, &:*)
 # p array
-
-
-# [1,2,3,4].inject do |acc, el|
-# 		puts "at this moment the accumulator is eq:#{acc} and the element that is going to be added to the acc is #{el}"
-# 		end
-# 	end
-# end

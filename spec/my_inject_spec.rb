@@ -1,4 +1,4 @@
-
+require 'my_inject'
 
 describe Array do 
 
@@ -23,7 +23,6 @@ describe Array do
 	end
 
 	context "strings" do
-
 		
 		it "should find the longest word" do
 			test_array = %w(cup book monitor)
